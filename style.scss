@@ -6,19 +6,69 @@
 html{
     font-size: 10px;
 }
+li{
+    list-style: none;
+}
 header{
-    display: flex;
     width: 100%;
     height: 7rem;
+    // border: 1px solid;
+    
     .nav{
-        width: 80%;
+        width: 90%;
         height: 6rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // border: 1px solid red;
+        margin: 0 auto;
         .header-left{
             display: flex;
             width: 10rem;
+            flex: 1 1 15rem;
+            // border: 1px solid blue;
+            h1{
+                font-size: 3rem;
+                color: red;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                margin: 0 1rem;
+
+            }
+            p{
+                font-size: 1rem;
+                align-self: flex-end;
+            }
+        }
+        .header-center{
+            display: flex;
+            flex: 3 1 20rem;
+            // border: 1px solid blue;
+            justify-content: space-evenly;
+            font-size: 2rem;
+        }
+        .header-right{
+            display: flex;
+            flex: 1 1 15rem;
+            // border: 1px solid blue;
+            justify-content: space-evenly;
+            font-size: 2rem;
+        }
+    }
+    .nav_bottom{
+        width: 100%;
+        height: 5rem;
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+
+        .nav_bottom_item{
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 2rem;
+            color: #FFFFFF;
         }
     }
 }
