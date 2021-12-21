@@ -109,4 +109,625 @@ header .nav_bottom .nav_bottom_item {
   font-size: 2rem;
   color: #FFFFFF;
 }
+
+.section_img {
+  width: 100%;
+  height: 70vh;
+}
+
+.section_img img {
+  width: 100%;
+}
+
+.calculator_wrapper {
+  width: 100%;
+  background-color: #F5F7F9;
+}
+
+.calculator_wrapper .advertising {
+  width: 90%;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.calculator_wrapper .calculator {
+  width: 80%;
+  height: 50rem;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.calculator_wrapper .calculator h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  margin: 5rem 1rem;
+}
+
+.calculator_wrapper .calculator .calculator-item {
+  width: 90%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  font-size: 1.7rem;
+}
+
+.calculator_wrapper .calculator .calculator-item .region {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.calculator_wrapper .calculator .calculator-item .region li {
+  width: 10rem;
+  height: 4rem;
+  margin: 0.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAECEF;
+}
+
+.calculator_wrapper .calculator .calculator-item .promoted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 2rem;
+}
+
+.calculator_wrapper .calculator .calculator-item .promoted li:nth-child(2) {
+  width: 14.7rem;
+  margin-left: 1rem;
+}
+
+.calculator_wrapper .calculator .Price {
+  width: 90%;
+  height: 3rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculator_wrapper .calculator .img {
+  margin: 0 auto;
+}
+
+.calculator_wrapper .calculator h2 {
+  width: 15rem;
+  height: 5rem;
+  border: 1px solid #e67676;
+  color: #FF0404;
+  font-size: 1.6rem;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months {
+  width: 100%;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months h3 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months li {
+  list-style-type: disc;
+  font-size: 2rem;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months .months {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem 2rem;
+  padding: 0 2rem;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months .months .month1 {
+  padding-left: 2rem;
+}
+
+.tariffs_wrapper {
+  width: 90%;
+  margin-top: 5rem;
+}
+
+.tariffs_wrapper .Comparison_of_tariffs {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.tariffs_wrapper .header-tariffs {
+  width: 90%;
+  height: 6rem;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.tariffs_wrapper .header-tariffs li {
+  margin: 2rem 1rem;
+}
+
+.tariffs_wrapper .Scan-wrapper {
+  width: 100%;
+}
+
+.tariffs_wrapper .Scan-wrapper .scan {
+  width: 80%;
+  height: 4.6rem;
+  background-color: #FFD773;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.tariffs_wrapper .Scan-wrapper .scan h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.tariffs_wrapper .Scan-wrapper .audit-wrapper {
+  width: 90%;
+}
+
+.tariffs_wrapper .Scan-wrapper .audit-wrapper .audit {
+  margin: 2rem auto;
+  padding-left: 8rem;
+  width: 80%;
+}
+
+.tariffs_wrapper .Scan-wrapper .audit-wrapper .audit h3 {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+.tariffs_wrapper .Scan-wrapper .audit-wrapper .audit p {
+  font-size: 1.6rem;
+  opacity: 90%;
+}
+
+.tariffs_wrapper .Scan-wrapper .keywords {
+  width: 80%;
+  height: 4.6rem;
+  background-color: #77CBFA;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.tariffs_wrapper .Scan-wrapper .keywords h5 {
+  text-align: center;
+}
+
+.tariffs_wrapper .compilation-wrapper {
+  width: 100%;
+}
+
+.tariffs_wrapper .compilation-wrapper .compilation {
+  margin: 2rem auto;
+  padding-left: 8rem;
+  width: 80%;
+}
+
+.tariffs_wrapper .compilation-wrapper .compilation h3 {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+.tariffs_wrapper .compilation-wrapper .compilation p {
+  font-size: 1.6rem;
+  opacity: 90%;
+}
+
+.tariffs_wrapper .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tariffs_wrapper .money li {
+  margin-left: 2rem;
+}
+
+.tariffs_wrapper .money li p {
+  width: 12rem;
+  height: 4rem;
+  border: 1px solid #ec5454;
+  color: #FF0404;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+}
+
+.tariffs_wrapper .money li h4 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.Application_form-wrapper {
+  width: 100%;
+  height: 37.3rem;
+  background-color: #333333;
+  margin-top: 5rem;
+}
+
+.Application_form-wrapper h4 {
+  text-align: center;
+  font-size: 5rem;
+  line-height: 5rem;
+  padding: 3rem 0;
+}
+
+.Application_form-wrapper .form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.Application_form-wrapper .form .name {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Application_form-wrapper .form .name h5 {
+  width: 20rem;
+  height: 5rem;
+  border: 1px solid #FFFFFF;
+  font-size: 1.6rem;
+  margin: 2rem 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Application_form-wrapper .form .application {
+  width: 50%;
+}
+
+.Application_form-wrapper .form .application p {
+  font-size: 1.4rem;
+  padding: 3rem 0;
+}
+
+.Application_form-wrapper .form .application h6 {
+  font-size: 1.6rem;
+  width: 31rem;
+  height: 4.9rem;
+  background-color: #FF0404;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading-wrapper {
+  width: 100%;
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading-wrapper .heading {
+  margin: 0 auto;
+}
+
+.heading-wrapper .heading .heading-img {
+  width: 13.9rem;
+  height: 13.9rem;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+.heading-wrapper .heading .heading-img img {
+  position: absolute;
+  left: 40px;
+  bottom: 0px;
+}
+
+.heading-wrapper .heading h3 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.heading-wrapper .heading p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.rates-wrapper {
+  width: 100%;
+  background-color: #ECE8E5;
+}
+
+.rates-wrapper h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.rates-wrapper .rates {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.rates-wrapper .rates .positions {
+  width: 23rem;
+  height: 43rem;
+  border: 1px solid #93E7FF;
+  border-radius: 2rem;
+  background-color: #93E7FF;
+  margin: 0 auto;
+  position: relative;
+}
+
+.rates-wrapper .rates .positions h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.rates-wrapper .rates .positions img {
+  margin: 0 auto;
+  position: absolute;
+  left: 5rem;
+  top: 7rem;
+}
+
+.rates-wrapper .rates .positions p {
+  padding: 15rem 4rem 4rem 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.rates-wrapper .rates .positions h4 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.rates-wrapper .rates .positions h5 {
+  width: 19rem;
+  height: 5rem;
+  background-color: #FFFFFF;
+  font-size: 1.6rem;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-wrapper {
+  width: 100%;
+}
+
+.portfolio-wrapper h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.portfolio-wrapper .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portfolio-wrapper .portfolio .Promotion {
+  background-color: #F5F7F9;
+  margin: 0 1rem 3rem 1rem;
+}
+
+.portfolio-wrapper .portfolio .Promotion h6 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+}
+
+.portfolio-wrapper .portfolio .Promotion p {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.bottom-wrapper {
+  width: 100%;
+  height: 25rem;
+  background-color: #333333;
+  position: relative;
+}
+
+.bottom-wrapper .bottom-item {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.bottom-wrapper .bottom-item .bottom-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.bottom-wrapper .bottom-item .bottom-left h1 {
+  font-size: 2.5rem;
+  color: red;
+  margin-right: 1rem;
+}
+
+.bottom-wrapper .bottom-item .bottom-left p {
+  font-size: 1rem;
+  color: #FFFFFF;
+  padding-top: 0.5rem;
+}
+
+.bottom-wrapper .bottom-item .bottom-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 35rem;
+          flex: 2 1 35rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bottom-wrapper .bottom-item .bt-item {
+  color: #FFFFFF;
+}
+
+.bottom-wrapper .bottom-item .bt-item h5 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.bottom-wrapper .bottom-item .bt-item li {
+  font-size: 1.6rem;
+  list-style-type: disc;
+  margin: 1rem 1rem;
+}
+
+.bottom-wrapper .line-btn {
+  position: absolute;
+  left: 50px;
+  bottom: 60px;
+}
+
+.bottom-wrapper .bottom-btn {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem auto;
+  color: #FFFFFF;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1.6rem;
+}
 /*# sourceMappingURL=style.css.map */
