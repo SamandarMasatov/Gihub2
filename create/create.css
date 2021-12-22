@@ -1,0 +1,1296 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+}
+
+.header .nav {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .nav .alkk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 5rem;
+          flex: 1 1 5rem;
+}
+
+.header .nav .alkk .ALKKRU {
+  width: 12rem;
+  height: 2.3rem;
+  background: url("../img/ALKK.ru (2).png") no-repeat center;
+  background-size: cover;
+}
+
+.header .nav .alkk .net {
+  margin-left: 1rem;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header .nav .nav_link {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 15rem;
+          flex: 3 1 15rem;
+}
+
+.header .nav .nav_link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+}
+
+.header .nav .nav_link ul li {
+  margin: 0 2rem;
+}
+
+.header .nav .nav_link ul li a {
+  color: #333333;
+}
+
+.header .nav .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+  margin-right: 2rem;
+}
+
+.header .nav .number .tel_icon {
+  width: 1.9rem;
+  height: 1.9rem;
+  background: url("../img/Vector.png") no-repeat center;
+  background-size: cover;
+}
+
+.header .nav .number .tel_icon2 {
+  width: 1.9rem;
+  height: 2rem;
+  margin-left: 1.2rem;
+  background: url("../img/Vector (1).png") no-repeat center;
+  background-size: cover;
+}
+
+.header .nav .number p {
+  font-size: 1.8rem;
+  margin-left: 1.2rem;
+}
+
+.header .nav .number p a {
+  color: #333333;
+  border-bottom: 2px solid blue;
+}
+
+.header_link {
+  width: 100%;
+  height: 3.8rem;
+  background-color: #333333;
+}
+
+.header_link ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header_link ul li {
+  list-style: none;
+}
+
+.header_link ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 3rem;
+}
+
+.sozdanie_card {
+  width: 100%;
+  height: 19rem;
+  background: url("../img/sozdanie/rasm.png") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sozdanie_card h2 {
+  font-size: 5.5rem;
+  color: #333333;
+}
+
+.nav_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 8rem;
+}
+
+.nav_item span {
+  border: 1px solid #EAECEF;
+  margin-top: 2rem;
+}
+
+.nav_item .nav_item_nomer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.nav_item .nav_item_nomer h2 {
+  font-size: 4.5rem;
+}
+
+.nav_item .nav_item_nomer p {
+  font-size: 1.4rem;
+}
+
+.forma {
+  width: 100%;
+  background-color: #333333;
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forma h2 {
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.forma form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 0;
+}
+
+.forma form .name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 4rem;
+}
+
+.forma form .name .name_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forma form .name .name_text input {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  background-color: #333333;
+  color: #fff;
+}
+
+.forma form .name .name_text input ::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.forma form .name .name_text input :-ms-input-placeholder {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.forma form .name .name_text input ::-ms-input-placeholder {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.forma form .name .name_text input ::placeholder {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.forma form .button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forma form .button .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.forma form .button .checkbox p {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.forma form .button button {
+  padding: 1rem 4rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  background-color: #FF0404;
+}
+
+.forma form .button button a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.zagolovok {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.zagolovok .zagolovok_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
+.zagolovok .zagolovok_container .aylana {
+  width: 13.9rem;
+  height: 13.9rem;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.zagolovok .zagolovok_container .aylana .zagolovok_img {
+  width: 5.6rem;
+  height: 8.9rem;
+  background: url("../img/zagolovok/Group 481317.png") no-repeat center;
+  background-size: cover;
+}
+
+.zagolovok .zagolovok_container p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.zagolovok .zagolovok_container p b {
+  font-size: 2.2rem;
+}
+
+.tarif {
+  width: 100%;
+  text-align: center;
+  padding: 10rem 0;
+  background-color: #F5F7F9;
+}
+
+.tarif h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.tarif .pozition {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tarif .pozition .tarif_container {
+  width: 21rem;
+  margin: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #93E7FF;
+  border-radius: 1.5rem;
+}
+
+.tarif .pozition .tarif_container .tarif_card {
+  width: 80%;
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tarif .pozition .tarif_container .tarif_card .Продвижение {
+  font-size: 2rem;
+}
+
+.tarif .pozition .tarif_container .tarif_card .Продвинем {
+  font-size: 1.4rem;
+}
+
+.tarif .pozition .tarif_container .tarif_card .summa {
+  font-size: 1.8rem;
+}
+
+.tarif .pozition .tarif_container .tarif_card .tarif_card_img {
+  width: 11.4rem;
+  height: 11.4rem;
+  background: url("../img/tarif/image 4.png") no-repeat center;
+  background-size: cover;
+}
+
+.tarif .pozition .tarif_container .tarif_card button {
+  padding: 0.6rem 2.2rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.tarif .pozition .tarif_container2 {
+  width: 21rem;
+  margin: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFD773;
+  border-radius: 1.5rem;
+}
+
+.tarif .pozition .tarif_container2 .tarif_card {
+  width: 80%;
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tarif .pozition .tarif_container2 .tarif_card .tarif_card_img2 {
+  width: 11.5rem;
+  height: 11.5rem;
+  background: url("../img/tarif/image 5.png") no-repeat center;
+  background-size: cover;
+}
+
+.tarif .pozition .tarif_container2 .tarif_card .Продвижение {
+  font-size: 2rem;
+}
+
+.tarif .pozition .tarif_container2 .tarif_card .Продвинем {
+  font-size: 1.4rem;
+}
+
+.tarif .pozition .tarif_container2 .tarif_card .summa {
+  font-size: 1.8rem;
+}
+
+.tarif .pozition .tarif_container2 .tarif_card button {
+  padding: 0.6rem 2.2rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.tarif .pozition .tarif_container3 {
+  width: 21rem;
+  margin: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #A3A3FF;
+  border-radius: 1.5rem;
+}
+
+.tarif .pozition .tarif_container3 .tarif_card {
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tarif .pozition .tarif_container3 .tarif_card .tarif_card_img3 {
+  width: 11.4rem;
+  height: 11.4rem;
+  background: url("../img/tarif/image 6.png") no-repeat center;
+  background-size: cover;
+}
+
+.tarif .pozition .tarif_container3 .tarif_card .Продвижение {
+  font-size: 2rem;
+}
+
+.tarif .pozition .tarif_container3 .tarif_card .Продвинем {
+  font-size: 1.4rem;
+}
+
+.tarif .pozition .tarif_container3 .tarif_card .summa {
+  font-size: 1.8rem;
+}
+
+.tarif .pozition .tarif_container3 .tarif_card button {
+  padding: 0.6rem 2.2rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.tarif .pozition .tarif_container4 {
+  width: 21rem;
+  margin: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #D1CAFF;
+  border-radius: 1.5rem;
+}
+
+.tarif .pozition .tarif_container4 .tarif_card {
+  width: 80%;
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tarif .pozition .tarif_container4 .tarif_card .tarif_card_img4 {
+  width: 11.5rem;
+  height: 11.5rem;
+  background: url("../img/tarif/image 7.png") no-repeat center;
+  background-size: cover;
+}
+
+.tarif .pozition .tarif_container4 .tarif_card .Продвижение {
+  font-size: 2rem;
+}
+
+.tarif .pozition .tarif_container4 .tarif_card .Продвинем {
+  font-size: 1.4rem;
+}
+
+.tarif .pozition .tarif_container4 .tarif_card .summa {
+  font-size: 1.8rem;
+}
+
+.tarif .pozition .tarif_container4 .tarif_card button {
+  padding: 0.6rem 2.2rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.sravnenie {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.sravnenie .h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.sravnenie .sravnenie_link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sravnenie .sravnenie_link a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  margin: 4rem 1rem  2rem 1rem;
+}
+
+.sravnenie .analiz {
+  width: 100%;
+  height: 4.6rem;
+  background-color: #FFD773;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sravnenie .analiz h2 {
+  font-size: 3rem;
+}
+
+.sravnenie .obshiy {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #EAECEF;
+  padding: 1.5rem 0;
+}
+
+.sravnenie .obshiy .obshiy_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.sravnenie .obshiy .obshiy_text h2 {
+  font-size: 2.2rem;
+}
+
+.sravnenie .obshiy .obshiy_text p {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.sravnenie .obshiy .obshiy_ptichka {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.sravnenie .obshiy .obshiy_ptichka .optimiz h2 {
+  display: none;
+}
+
+.sravnenie .obshiy .obshiy_ptichka .ptichka_img {
+  width: 1.2rem;
+  height: 0.8rem;
+  background: url("../img/obshiy/Vector 47.png") no-repeat center;
+  background-size: cover;
+}
+
+.sravnenie .obshiy .obshiy_ptichka span {
+  width: 1px;
+  height: 1.5rem;
+  background-color: #EAECEF;
+}
+
+.sravnenie .obshiy .obshiy_ptichka .ptichka_qizil_img {
+  width: 1.2rem;
+  height: 0.8rem;
+  background: url("../img/obshiy/Vector 48.png") no-repeat center;
+  background-size: cover;
+}
+
+.sravnenie .rabota {
+  width: 100%;
+  height: 4.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #77CBFA;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.sravnenie .rabota h2 {
+  font-size: 3rem;
+}
+
+.valyuta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+.valyuta .rubil {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.valyuta .rubil .prodvin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.valyuta .rubil .prodvin h2 {
+  font-size: 1.8rem;
+}
+
+.valyuta .rubil .prodvin .h2 {
+  display: none;
+}
+
+.valyuta .rubil button {
+  padding: 0.7rem 2rem;
+  font-size: 1.4rem;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  margin: 1rem 0;
+}
+
+.portfolio {
+  width: 100%;
+  background-color: #F5F7F9;
+  padding: 10rem 2rem;
+}
+
+.portfolio h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.portfolio .portfolio_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .portfolio_container .portfolio_card {
+  width: 22rem;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.portfolio .portfolio_container .portfolio_card .portfolio_img {
+  width: 17.9rem;
+  height: 24.8rem;
+  background: url("../img/portfolio/Group 481329.png") no-repeat center;
+  background-size: cover;
+}
+
+.portfolio .portfolio_container .portfolio_card .portfolio_img2 {
+  width: 17.9rem;
+  height: 24.8rem;
+  background: url("../img/portfolio/Group 481332.png") no-repeat center;
+  background-size: cover;
+}
+
+.portfolio .portfolio_container .portfolio_card .portfolio_img3 {
+  width: 17.9rem;
+  height: 24.8rem;
+  background: url("../img/portfolio/Group 481327.png") no-repeat center;
+  background-size: cover;
+}
+
+.portfolio .portfolio_container .portfolio_card .portfolio_img4 {
+  width: 17.9rem;
+  height: 24.8rem;
+  background: url("../img/portfolio/Group 481326.png") no-repeat center;
+  background-size: cover;
+}
+
+.portfolio .portfolio_container .portfolio_card h2 {
+  font-size: 2rem;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.portfolio .portfolio_container .portfolio_card p {
+  margin: 2rem 0;
+}
+
+.portfolio .portfolio_container .portfolio_card p a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #333333;
+}
+
+.container {
+  width: 100%;
+  background-color: #333333;
+}
+
+.container .card_link {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem;
+  border-bottom: 2px solid #666666;
+}
+
+.container .card_link .alkk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  margin-top: -10rem;
+}
+
+.container .card_link .alkk p {
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.container .card_link .alkk .ALKKRU {
+  width: 12rem;
+  height: 2.3rem;
+  background: url("../img/card_likn_img/ALKK.ru (2).png") no-repeat center;
+  background-size: cover;
+}
+
+.container .card_link .sayt_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 10rem;
+          flex: 4 1 10rem;
+  padding: 2rem 0 8rem;
+  color: #ffffff;
+}
+
+.container .card_link .sayt_link .sozdanie {
+  margin-left: 2rem;
+}
+
+.container .card_link .sayt_link .sozdanie h2 {
+  font-size: 2.2rem;
+}
+
+.container .card_link .sayt_link .sozdanie span {
+  width: 4rem;
+  height: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FF0404;
+  margin-top: 2rem;
+}
+
+.container .card_link .sayt_link .sozdanie .pozisiyom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.container .card_link .sayt_link .sozdanie .pozisiyom .pozisiyom_img {
+  width: 6px;
+  height: 7px;
+  background: url("../img/card_likn_img/Vector.png") no-repeat center;
+  background-size: cover;
+}
+
+.container .card_link .sayt_link .sozdanie .pozisiyom p {
+  margin-left: 1rem;
+}
+
+.container .karta {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav_link {
+    display: none;
+  }
+  .header .nav .span {
+    width: 4rem;
+    height: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .nav .span span {
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #333333;
+    margin: 0.2rem 0;
+    border: 1px solid;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .container .card_link {
+    display: block;
+  }
+  .container .card_link .alkk {
+    margin-top: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .card_link .sayt_link {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 0 0 0;
+  }
+  .container .card_link .sayt_link .sozdanie {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .header .nav .number {
+    display: none;
+  }
+  .sozdanie_card h2 {
+    font-size: 4.5rem;
+  }
+  .forma h2 {
+    font-size: 4rem;
+  }
+  .zagolovok .zagolovok_container p b {
+    font-size: 2rem;
+  }
+  .tarif h2 {
+    font-size: 4rem;
+  }
+  .sravnenie .h2 {
+    font-size: 4rem;
+  }
+  .sravnenie h2 {
+    font-size: 4rem;
+  }
+  .sravnenie .sravnenie_link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sravnenie .sravnenie_link a {
+    margin: 2rem 1rem;
+  }
+  .sravnenie .analiz h2 {
+    font-size: 2.5rem;
+  }
+  .sravnenie .obshiy {
+    display: block;
+  }
+  .sravnenie .obshiy .obshiy_text h2 {
+    font-size: 1.8rem;
+  }
+  .sravnenie .obshiy .obshiy_text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  .sravnenie .obshiy .obshiy_ptichka {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sravnenie .obshiy .obshiy_ptichka .blok {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sravnenie .obshiy .obshiy_ptichka .blok .optimiz h2 {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .sravnenie .obshiy .obshiy_ptichka .blok .ptichka_img {
+    width: 1.4rem;
+    height: 1rem;
+    margin: 0 1rem;
+  }
+  .sravnenie .obshiy .obshiy_ptichka .blok .ptichka_qizil_img {
+    width: 1.4rem;
+    height: 1rem;
+    margin: 0 1rem;
+  }
+  .sravnenie .rabota h2 {
+    font-size: 2rem;
+  }
+  .valyuta {
+    display: block;
+  }
+  .valyuta .rubil {
+    width: 80%;
+    background-color: #EAECEF;
+    margin: 1.5rem auto;
+    padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-radius: 0.7rem;
+  }
+  .valyuta .rubil .prodvin {
+    text-align: center;
+  }
+  .valyuta .rubil .prodvin .h2 {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .valyuta .rubil button {
+    color: red;
+  }
+  .portfolio h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .nav_item .nav_item_nomer h2 {
+    font-size: 3.5rem;
+  }
+  .sozdanie_card {
+    height: 12rem;
+  }
+  .header_link ul li {
+    font-size: 1rem;
+  }
+  .header_link ul li a {
+    margin: 1rem;
+  }
+  .nav_item {
+    display: block;
+  }
+  .nav_item span {
+    width: 100%;
+    height: 0.4rem;
+    background-color: red;
+    display: block;
+  }
+  .sozdanie_card h2 {
+    font-size: 3.5rem;
+  }
+  .forma form .button .checkbox p {
+    font-size: 1rem;
+  }
+  .forma form .button button {
+    padding: 0.4rem 2.3rem;
+  }
+  .forma form .button button a {
+    font-size: 1.4rem;
+  }
+  .forma form .name {
+    margin-right: 1rem;
+  }
+}
+/*# sourceMappingURL=create.css.map */

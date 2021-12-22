@@ -1,0 +1,934 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 5rem;
+    .nav{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .alkk{
+            display: flex;
+            flex: 1 1 5rem;
+            .ALKKRU{
+                width: 12rem;
+                height: 2.3rem;
+                background: url("../img/ALKK.ru\ \(2\).png") no-repeat center;
+                background-size: cover;
+            }
+            .net{
+                margin-left: 1rem;
+                font-size: 1rem;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+        .nav_link{
+            flex: 3 1 15rem;
+            ul{
+                display: flex;
+                justify-content: center;
+                font-size: 1.4rem;
+                li{
+                    margin: 0 2rem;
+                    a{
+                        color: #333333;
+                    }
+                }
+            }
+        }
+       .number{
+            display: flex;
+            justify-content: flex-end;
+            flex: 1 1 15rem;
+            margin-right: 2rem;
+            .tel_icon{
+                width: 1.9rem;
+                height: 1.9rem;
+                background: url("../img/Vector.png") no-repeat center;
+                background-size: cover;
+            }
+            .tel_icon2{
+                width: 1.9rem;
+                height: 2rem;
+                margin-left: 1.2rem;
+                background: url("../img/Vector\ \(1\).png") no-repeat center;
+                background-size: cover;
+            }
+            p{
+                font-size: 1.8rem;
+                margin-left: 1.2rem;
+                a{
+                    color: #333333;
+                    border-bottom: 2px solid blue;
+                }
+            }
+    }
+ }
+
+}
+.header_link{
+    width: 100%;
+    height: 3.8rem;
+    background-color: #333333;
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #fff;
+                margin: 3rem;
+            }
+        }
+    }
+}
+.sozdanie_card{
+    width: 100%;
+    height: 19rem;
+    background: url("../img/sozdanie/rasm.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 5.5rem;
+        color: #333333;
+    }
+}
+.nav_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 8rem;
+    span{
+        border: 1px solid #EAECEF;
+        margin-top: 2rem;
+    }
+    .nav_item_nomer{
+        flex: 1 1 15rem;
+        text-align: center;
+        margin: 2rem 0;
+      h2{
+          font-size: 4.5rem;
+      }
+      p{
+          font-size: 1.4rem;
+      }
+    }
+}
+.forma{
+    width: 100%;
+    background-color: #333333;
+    padding: 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-size: 5rem;
+        color: #fff;
+        text-align: center;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        padding: 5rem 0;
+        .name{
+            flex: 1 1 10rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            flex-direction: column;
+            margin-right: 4rem;
+            .name_text{
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                input{
+                    margin: 1rem;
+                    padding: 1rem;
+                    border: 1px solid #fff;
+                    border-radius: 0.5rem;
+                    background-color: #333333;
+                    color: #fff;
+                    ::placeholder{
+                        color: #fff;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        .button{
+            flex: 1 1 10rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-direction: column;
+            .checkbox{
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                p{
+                    font-size: 1.4rem;
+                    margin-left: 1rem;
+                    color: #fff;
+                }
+            }
+            button{
+                padding: 1rem 4rem;
+                border: 1px solid;
+                border-radius: 0.5rem;
+                background-color: #FF0404;
+                a{
+                    color: #fff;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+.zagolovok{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem 0;
+    flex-wrap: wrap;
+    .zagolovok_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+        .aylana{
+            width: 13.9rem;
+            height: 13.9rem;
+            border-radius: 50%;
+            background-color: #F2F2F2;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            .zagolovok_img{
+                width: 5.6rem;
+                height: 8.9rem;
+                background: url("../img/zagolovok/Group\ 481317.png") no-repeat center;
+                background-size: cover;
+            }
+            
+        }
+        p{
+            margin: 1rem 0;
+            font-size: 1.4rem;
+            b{
+                font-size: 2.2rem;
+            }
+        }
+      
+    }
+}
+.tarif{
+    width: 100%;
+    text-align: center;
+    padding: 10rem 0;
+    background-color: #F5F7F9;
+    h2{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    .pozition{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .tarif_container{
+            width: 21rem;
+            margin: 2rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: #93E7FF;
+            border-radius: 1.5rem;
+            .tarif_card{
+                width: 80%;
+                height: 35rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                .Продвижение{
+                    font-size: 2rem;
+                }
+                .Продвинем{
+                    font-size: 1.4rem;
+                }
+                .summa{
+                    font-size: 1.8rem;
+                }
+                .tarif_card_img{
+                    width: 11.4rem;
+                    height: 11.4rem;
+                    background: url("../img/tarif/image\ 4.png") no-repeat center;
+                    background-size: cover;
+                }
+                button{
+                    padding: 0.6rem 2.2rem;
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 0.5rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+
+        .tarif_container2{
+            width: 21rem;
+            margin: 2rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: #FFD773;
+            border-radius: 1.5rem;
+            .tarif_card{
+                width: 80%;
+                height: 35rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                .tarif_card_img2{
+                    width: 11.5rem;
+                    height: 11.5rem;
+                    background: url("../img/tarif/image\ 5.png") no-repeat center;
+                    background-size: cover;
+                }
+                .Продвижение{
+                    font-size: 2rem;
+                }
+                .Продвинем{
+                    font-size: 1.4rem;
+                }
+                .summa{
+                    font-size: 1.8rem;
+                }
+                button{
+                    padding: 0.6rem 2.2rem;
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 0.5rem;
+                    font-size: 1.6rem;
+                }
+        }
+        }        
+
+
+
+        .tarif_container3{
+            width: 21rem;
+            margin: 2rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color:#A3A3FF;
+            border-radius: 1.5rem;
+            .tarif_card{
+                height: 35rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                .tarif_card_img3{
+                    width: 11.4rem;
+                    height: 11.4rem;
+                    background: url("../img/tarif/image\ 6.png") no-repeat center;
+                    background-size: cover;
+                }
+                .Продвижение{
+                    font-size: 2rem;
+                }
+                .Продвинем{
+                    font-size: 1.4rem;
+                }
+                .summa{
+                    font-size: 1.8rem;
+                }
+                button{
+                    padding: 0.6rem 2.2rem;
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 0.5rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+
+
+        .tarif_container4{
+            width: 21rem;
+            margin: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: #D1CAFF;
+            border-radius: 1.5rem;
+            .tarif_card{
+                width: 80%;
+                height: 35rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                .tarif_card_img4{
+                    width: 11.5rem;
+                    height: 11.5rem;
+                    background: url("../img/tarif/image\ 7.png") no-repeat center;
+                    background-size: cover;
+                }
+                .Продвижение{
+                    font-size: 2rem;
+                }
+                .Продвинем{
+                    font-size: 1.4rem;
+                }
+                .summa{
+                    font-size: 1.8rem;
+                }
+                button{
+                    padding: 0.6rem 2.2rem;
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 0.5rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+.sravnenie{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    .h2{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .sravnenie_link{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        a{
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: black;
+            margin: 4rem 1rem  2rem 1rem;
+        }
+        
+}
+       .analiz{
+        width: 100%;
+        height: 4.6rem;
+        background-color: #FFD773;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-size: 3rem;
+        }
+    }
+    .obshiy{
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #EAECEF;
+        padding: 1.5rem 0;
+        .obshiy_text{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            flex: 1 1 10rem;
+            h2{
+                font-size: 2.2rem;
+            }
+            p{
+                font-size: 1.6rem;
+                margin-top: 0.5rem;
+            }
+        }
+        .obshiy_ptichka{
+            flex: 1 1 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            .optimiz{
+                h2{
+                    display: none;
+                }
+            }
+            .ptichka_img{
+                width: 1.2rem;
+                height: 0.8rem;
+                background: url("../img/obshiy/Vector\ 47.png") no-repeat center;
+                background-size: cover;
+            }
+            span{
+                width: 1px;
+                height: 1.5rem;
+                background-color: #EAECEF;
+            }
+            .ptichka_qizil_img{
+                width: 1.2rem;
+                height: 0.8rem;
+                background: url("../img/obshiy/Vector\ 48.png") no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+    .rabota{
+        width: 100%;
+        height: 4.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #77CBFA;
+        border-radius: 0.5rem;
+        margin: 2rem 0;
+        h2{
+            font-size: 3rem;
+        }
+        }
+    }
+        .valyuta{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          margin: 1rem 0;
+          .rubil{
+              margin: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+             .prodvin{
+                 display: flex;
+                h2{
+                    font-size: 1.8rem;
+                }
+                .h2{
+                    display: none;
+                }
+             }
+              button{
+                  padding: 0.7rem 2rem;
+                  font-size: 1.4rem;
+                  border: 1px solid red;
+                  border-radius: 0.5rem;
+                  background-color: #fff;
+                  margin: 1rem 0;
+              }
+          }
+        }
+
+
+.portfolio{
+    width: 100%;
+    background-color: #F5F7F9;
+    padding: 10rem 2rem;
+    
+    h2{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .portfolio_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        flex-wrap: wrap;
+        .portfolio_card{
+           width: 22rem;
+           padding: 2rem;
+           margin: 2rem;
+           border-radius: 2rem;
+           background-color: #fff;
+            .portfolio_img{
+                width: 17.9rem;
+                height: 24.8rem;
+                background: url("../img/portfolio/Group\ 481329.png") no-repeat  center;
+                background-size: cover;
+            }
+            .portfolio_img2{
+                width: 17.9rem;
+                height: 24.8rem;
+                background: url("../img/portfolio/Group\ 481332.png") no-repeat  center;
+                background-size: cover;
+            }
+            .portfolio_img3{
+                width: 17.9rem;
+                height: 24.8rem;
+                background: url("../img/portfolio/Group\ 481327.png") no-repeat  center;
+                background-size: cover;
+            }
+            .portfolio_img4{
+                width: 17.9rem;
+                height: 24.8rem;
+                background: url("../img/portfolio/Group\ 481326.png") no-repeat  center;
+                background-size: cover;
+            }
+            h2{
+                font-size: 2rem;
+                text-align: left;
+                margin: 2rem 0;
+            }
+            p{
+                margin: 2rem 0;
+                a{
+                    text-decoration: none;
+                    font-size: 1.4rem;
+                    color: #333333;
+                }
+            }
+        }
+    }
+}
+.container{
+    width: 100%;
+    background-color: #333333;
+.card_link{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    border-bottom: 2px solid #666666;
+    .alkk{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 1 1 10rem;
+        margin-top: -10rem;
+        p{
+            margin-left: 1rem;
+            color: #fff;
+        }
+        .ALKKRU{
+            width: 12rem;
+            height: 2.3rem;
+            background: url("../img/card_likn_img/ALKK.ru\ \(2\).png") no-repeat center;
+            background-size: cover;
+        }
+    }
+    .sayt_link{
+        display: flex;
+        justify-content: space-between;
+        flex: 4 1 10rem;
+        padding: 2rem 0 8rem;
+        color: #ffffff;
+        .sozdanie{  
+            margin-left: 2rem;
+            h2{
+                font-size: 2.2rem;  
+            }
+            span{
+                width: 4rem;
+                height: 0.2rem;
+                display: flex;
+                background-color: #FF0404;
+                margin-top: 2rem;
+            }
+            .pozisiyom{
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                font-size: 1.6rem;
+                .pozisiyom_img{
+                    width: 6px;
+                    height: 7px;
+                    background: url("../img/card_likn_img/Vector.png") no-repeat center;
+                    background-size: cover;
+                }
+                p{
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+       .karta{
+           width: 90%;
+           margin: 0 auto;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 5rem 0;
+           font-size: 1.6rem;
+           color: #fff;
+    }
+}
+
+
+
+
+
+// Responsive
+
+@media only screen and (max-width: 768px){
+    .nav_link{
+        display: none;
+    }
+    .header{
+        .nav{
+            .span{
+                width: 4rem;
+                height: 3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                span{
+                    width: 3rem;
+                    height: 0.3rem;
+                    background-color: #333333;
+                    margin: 0.2rem 0;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 620px){
+     .container{
+        .card_link{
+            display: block;
+            .alkk{
+                margin-top: 2rem;
+                justify-content: center;
+            }
+            .sayt_link{
+                justify-content: space-evenly;
+                flex-direction: column;
+                padding: 2rem 0 0 0;
+                .sozdanie{
+                    margin-left: 0;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+     }
+}
+@media only screen and (max-width: 550px){
+            .header{
+               .nav{
+                .number{
+                    display: none;
+                }
+               }
+            }
+            .sozdanie_card{
+                h2{
+                    font-size: 4.5rem;
+                }
+            }
+            .forma{
+                h2{
+                    font-size: 4rem;
+                }
+            }
+            .zagolovok{
+                .zagolovok_container{
+                    p{
+                        b{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+            .tarif{
+                h2{
+                    font-size: 4rem;
+                }
+            }
+            .sravnenie{
+                .h2 {
+                font-size: 4rem;
+            }
+        }
+        .sravnenie{
+            h2{
+                font-size: 4rem;
+            }
+            .sravnenie_link {
+                justify-content: center;
+                a{
+                    margin: 2rem 1rem;  
+                    
+              }
+        }
+        .analiz{
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+        .obshiy{
+            display: block;
+            .obshiy_text{
+               
+                h2{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                }
+            }
+            .obshiy_ptichka{
+                align-items: flex-start;
+                flex-direction: column;
+               .blok{
+                   display: flex;
+                   align-items: center;
+                .optimiz{
+                   
+                    h2{
+                        display: block;
+                        font-size: 1.5rem;
+                    }
+                }
+                .ptichka_img{
+                    width: 1.4rem;
+                    height: 1rem;
+                    margin: 0 1rem;
+                }
+                .ptichka_qizil_img{
+                    width: 1.4rem;
+                    height: 1rem;
+                    margin: 0 1rem;
+                }
+               }
+            }
+        }
+         .rabota{
+             h2{
+                 font-size: 2rem;
+             }
+         }
+        }
+         .valyuta{
+             display: block;
+             .rubil{
+                 width: 80%;
+                 background-color: #EAECEF;
+                 margin: 1.5rem auto;
+                 padding: 2rem 0;
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-around;
+                 border-radius: 0.7rem;
+                 .prodvin{
+                     text-align: center;
+                     .h2{
+                         display: block;
+                         font-size: 1.5rem;
+                     }
+                 }
+                 button{
+                     color: red;
+                 }
+             }
+         }
+        
+    .portfolio{
+        h2{
+            font-size: 3.5rem;
+        }
+    }
+}
+@media only screen and (max-width: 426px) {
+    .nav_item{
+        .nav_item_nomer{
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+    }
+    .sozdanie_card{
+        height: 12rem;
+    }
+    .header_link{
+        ul{
+            li{
+                font-size: 1rem;
+                a{
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+    .nav_item{
+        display: block;
+        span{
+            width: 100%;
+            height: 0.4rem;
+            background-color: red;
+            display: block;
+        }
+    }
+    .sozdanie_card{
+        h2{
+            font-size: 3.5rem;
+        }
+    }
+    .forma {
+        form {
+            .button {
+
+                .checkbox{
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                button{
+                    padding: 0.4rem 2.3rem;
+                   a{
+                    font-size: 1.4rem;
+                   }
+                }
+            }
+            .name{
+                margin-right: 1rem;
+            }
+        }
+    }
+}
