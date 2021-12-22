@@ -1,0 +1,31 @@
+@media only screen and (max-width: 850px) {
+  header .nav_top .menu_top .burger span {
+    display: block;
+  }
+  header .nav_top .menu_top .nav_link {
+    display: none;
+  }
+  header .nav_top .menu_top .phone {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  footer .footer_wrapper .footer_in_logo {
+    margin: 1rem auto;
+  }
+  footer .footer_wrapper .footer_in {
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  header .nav_bottom .menu_bottom {
+    display: none;
+  }
+}
+
+.active {
+  left: 0;
+}
+/*# sourceMappingURL=responsive.css.map */

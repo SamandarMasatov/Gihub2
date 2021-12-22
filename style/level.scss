@@ -1,0 +1,610 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// font-family: 'Fira Sans Extra Condensed', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+main{
+    max-width: 140rem;
+    margin: 0 auto;
+}
+// header----------------------------------------------------
+header{
+    .nav_top{
+        width: 100%;
+        height: 5rem;
+        background-color: #E5E5E5; 
+        .menu_top{
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo{
+                flex: 1 1 1rem;
+            }
+            .burger{
+                width: 4rem;
+                span{
+                    display: none;
+                    width: 100%;
+                    height: 0.5rem;
+                    margin: 0.5rem 0;
+                    background-color: #000;
+                    border-radius: 5px;
+                }
+            }
+            .nav_link{
+                flex: 3 1 35rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .nav_item{
+                    a{
+                        margin: 0 1rem;
+                        font-family: 'Fira Sans Extra Condensed',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 17px;
+                        display: flex;
+                        align-items: flex-end;
+                        text-align: center;
+                        letter-spacing: 0.04em;
+                        color: #333333;
+                    }
+                }
+            }
+            .phone{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                white-space: nowrap;
+                a{
+                    margin: 0 0.2rem;
+                }
+                .number{
+                    margin: 0 1rem;
+                    font-family: 'Gilroy',sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: flex-end;
+                    text-align: center;
+                    color: #333333;
+                }
+            }
+        }
+    }
+    .nav_bottom{
+        width: 100%;
+        height: 5rem;
+        background: linear-gradient(0deg, #333333, #333333), linear-gradient(0deg, #333333, #333333), #735FF2;
+        .menu_bottom{
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .nav_link_bottom{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .nav_item_bottom{
+                    a{
+                        white-space: nowrap;
+                        padding: 0 2rem;
+                        font-family: 'Fira Sans Extra Condensed',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 150%;
+                        color: #FFFFFF;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+// home -----------------------------------------------------
+.home{
+    height: 20rem;
+    background-image: url('../images/home_img.png');
+    background-repeat: no-repeat;
+    .home_wrapper{
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+         h1{
+            font-family: 'Fira Sans Extra Condensed',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 5.5rem;
+            line-height: 100%;
+            color: #333333;
+         }
+    }
+}
+// sell------------------------------------------------------
+.sell{
+    width: 80%;
+    margin: 0 auto;
+    .sell_wrapper{
+        margin: 0 auto;
+        h1{
+            margin-top: 5rem;
+            text-align: center;
+            font-family: 'Fira Sans Extra Condensed',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 5rem;
+            line-height: 100%;
+            color: #333333;            
+        }
+        .title_top{
+            h1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 4rem;
+                margin-top: 5rem;
+                background: linear-gradient(0deg, #FFD773, #FFD773), #F4F7FE;
+                border-radius: 5px;
+                font-family: 'Fira Sans Extra Condensed',sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 3rem;
+                line-height: 100%;
+                color: #333333;                
+            }
+            .general_site{
+                border-bottom: 1px solid #EAECEF;
+                padding: 2rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .general_site_left{
+                    margin: 1rem 0;
+                    width: 45rem;
+                    h3{
+                        font-family: 'Fira Sans Extra Condensed',sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 2.2rem;
+                        line-height: 100%;
+                        color: #333333;                        
+                    }
+                    p{
+                        font-family: 'Gilroy',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 19px;                      
+                        color: #333333;
+                        opacity: 0.9;
+                    }
+                }
+                .general_site_right{
+                    margin: 0 4rem 0 0;
+                    width: 45rem;
+                    p{
+                        font-family: 'Gilroy',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 19px;                      
+                        color: #333333;
+                        opacity: 0.9; 
+                    }
+                }
+            }
+            .compilation{
+                border-top: 1px solid #EAECEF;
+                padding: 2rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .compilation_left{
+                    margin: 1rem 0;
+                    width: 45rem;
+                    h3{
+                        font-family: 'Fira Sans Extra Condensed',sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 2.2rem;
+                        line-height: 100%;
+                        color: #333333;                        
+                    }
+                    p{
+                        font-family: 'Gilroy',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 19px;                      
+                        color: #333333;
+                        opacity: 0.9;
+                    }
+                }
+                .compilation_right{
+                    margin: 0 4rem 0 0;
+                    width: 45rem;
+                    p{
+                        font-family: 'Gilroy',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 19px;                      
+                        color: #333333;
+                        opacity: 0.9; 
+                    }
+                }
+            }
+        }
+        .title_bottom{
+            h1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 4rem;
+                margin-top: 1rem;
+                background: linear-gradient(0deg, #77CBFA, #77CBFA), #F4F7FE;
+                border-radius: 5px;
+                font-family: 'Fira Sans Extra Condensed',sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 3rem;
+                line-height: 100%;
+                color: #333333;                
+            }
+            .general_site{
+                border-bottom: 1px solid #EAECEF;
+                padding: 2rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .general_site_left{
+                    margin: 1rem 0;
+                    width: 45rem;
+                    h3{
+                        font-family: 'Fira Sans Extra Condensed',sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 2.2rem;
+                        line-height: 100%;
+                        color: #333333;                        
+                    }
+                    p{
+                        font-family: 'Gilroy',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 19px;                      
+                        color: #333333;
+                        opacity: 0.9;
+                    }
+                }
+                .general_site_right{
+                    margin: 0 4rem 0 0;
+                    width: 45rem;
+                    p{
+                        font-family: 'Gilroy',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 19px;                      
+                        color: #333333;
+                        opacity: 0.9; 
+                    }
+                }
+            }
+        }
+    }
+}
+// forma---------------------------------------------------
+.forma{
+    width: 100%;
+    background-color: #333333;
+    .forma_wrapper{
+        padding: 5rem 0;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        .forma_name{
+            margin-bottom: 3rem;
+            h1{
+                font-family: 'Fira Sans Extra Condensed',sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 5rem;
+                line-height: 100%; 
+                color: #FFFFFF;                
+            }
+        }
+        .application{
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .forma_input{
+                margin: 0 auto;
+                width: 33rem;
+                height: 15rem;
+                input{
+                    padding: 0 2rem;
+                    color: white;
+                    margin: 1rem 0;
+                    width: 100%;
+                    height: 5rem;
+                    background: none;
+                    opacity: 0.25;
+                    border: 1px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                }
+                ::placeholder{
+                    font-family: 'Gilroy',sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    line-height: 19px;                      
+                    color: #FFFFFF;
+                }
+            }
+            .forma_send{
+                margin:  0 auto;
+                width: 33rem;
+                height: 15rem;
+                .input_label{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    label{
+                        margin-top: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Gilroy',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                        opacity: 0.9;
+                    }
+                    input{
+                        color:#FF0404;
+                    }
+                }
+                button{
+                    margin: 2.5rem 0;
+                    width: 100%;
+                    height: 5rem;
+                    border: none;
+                    background: #FF0404;
+                    border-radius: 5px;
+                    font-family: 'Gilroy',sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+// text---------------------------------------------------
+.text{
+    padding: 5rem 0;
+    width: 100%;
+    background: linear-gradient(0deg, #F5F7F9, #F5F7F9), #ECE8E5;
+    .text_name{
+        padding: 3rem 0;
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fira Sans Extra Condensed',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 5rem;
+            line-height: 100%;
+            color: #333333;            
+        }
+    }
+    .text_wrapper{
+        padding: 3rem 0;
+        margin: 0 auto;
+        width: 80%;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F4F7FE;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        .lorem{
+            margin: 5rem 0;
+            width: 80%;
+            margin: 0 auto;
+            h2{
+                margin: 2rem 0;
+                font-family: 'Fira Sans Extra Condensed',sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 3rem;
+                line-height: 100%;
+                color: #333333;                
+            }
+            p{
+                font-family: 'Gilroy',sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 145%;
+                color: #333333;
+                opacity: 0.9;
+            }
+        }
+    }
+}
+// portfolio---------------------------------------------
+.portfolio{
+    padding: 4rem 0;
+    .portfolio_name{
+        text-align: center;
+        h1{
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fira Sans Extra Condensed',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 5rem;
+            line-height: 100%;
+            color: #333333;
+        }
+    }
+    .portfolio_wrapper{
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .portfolio_card{
+            margin: 2rem 1rem;
+            width: 22rem;
+            padding: 1.5rem;
+            background: #F5F7F9;
+            border-radius: 20px;
+            h4{
+                margin: 2rem 0 1rem 0;
+                font-family: 'Fira Sans Extra Condensed',sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 2rem;
+                line-height: 100%;
+                color: #333333;
+            }
+            a{
+                margin: 1rem 0;
+                font-family: 'Gilroy',sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.4rem;
+                line-height: 16px;
+                color: #333333;
+                opacity: 0.9;
+            }
+        }
+    }
+}
+// footer------------------------------------------------
+.footer{
+    background-color:  #333333;
+    .footer_wrapper{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #666666;
+        .footer_in_logo{
+            // margin: 1rem 0;
+            width: 25rem;
+            height: 6rem;
+            .footer_logo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    margin: 0 0.5rem;
+                    font-family: 'Gilroy',sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 100%;
+                    color: #FFFFFF;                    
+                }
+            }
+        }
+        .footer_in{
+            // margin: 1rem 0;
+            width: 25rem;
+            h2{
+                margin: 6rem 0 3rem 0;
+                display: flex;
+                align-items: center;
+                // height: 5rem;
+                font-family: 'Fira Sans Extra Condensed',sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 2.2rem;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            ul{
+                li{
+                    margin: 1rem 0;
+                    a{
+                        margin: 2rem 0;
+                        font-family: 'Gilroy',sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                        line-height: 19px;
+                        color: #FFFFFF;
+                        img{
+                            margin-right: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_wrapper_bottom{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-family: 'Gilroy',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+}
+.active{
+    left: 0;
+}
+@import "responsive";
