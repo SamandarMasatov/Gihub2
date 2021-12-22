@@ -1,0 +1,52 @@
+@media only screen and (max-width: 850px){
+    header{
+        .nav_top{
+            .menu_top{
+                .burger{
+                    span{
+                        display: block;
+                    }
+                }
+                .nav_link{
+                    // z-index: 5;
+                    // position: fixed;
+                    // top: 0;
+                    // left: -100%;
+                    display: none;
+                }
+                .phone{
+                    // z-index: 5;
+                    // position: fixed;
+                    // top: 0;
+                    // left: -100%;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 555px){
+    footer{
+        .footer_wrapper{
+            .footer_in_logo{
+                margin: 1rem auto;
+            }
+            .footer_in{
+                margin: 1rem auto;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 478px){
+    header{
+        .nav_bottom{
+            .menu_bottom{
+                display: none;
+            }
+        }
+    }
+}
+
+.active{
+    left: 0;
+}
