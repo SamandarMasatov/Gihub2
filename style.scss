@@ -42,14 +42,14 @@ header{
         .header-center{
             display: flex;
             flex: 3 1 20rem;
-            // border: 1px solid blue;
+            border: 1px solid blue;
             justify-content: space-evenly;
             font-size: 2rem;
         }
         .header-right{
             display: flex;
             flex: 1 1 15rem;
-            // border: 1px solid blue;
+            border: 1px solid blue;
             justify-content: space-evenly;
             font-size: 2rem;
         }
@@ -74,9 +74,11 @@ header{
 }
 .section_img{
     width: 100%;
-    height: 70vh;
+   
     img{
+        margin-top: 4rem;
         width: 100%;
+        background-size: cover;
     }
 }
 .calculator_wrapper{
@@ -107,8 +109,7 @@ header{
             height: 5rem;
             display: flex;
             margin: 0 auto;
-            font-size: 1.7rem;
-            // border: 1px solid;
+            font-size: 1.7rem;        
             .region{
                 width: 95%;
                 display: flex;
@@ -172,14 +173,26 @@ header{
                 font-size: 2rem;
             }
             .months{
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
-                margin: 2rem 2rem;
+                margin: 2rem auto;
                 padding: 0 2rem;
+                border: 1px solid;
                 .month1{
                     padding-left: 2rem;
+                    flex: 1 1 15rem;
+                    margin-right: 2rem;
                 }
+                .month2{
+                    flex: 1 1 15rem;
+                    margin-right: 2rem;
+                }
+                .month3{
+                    flex: 1 1 15rem;
+                }
+
             }
         }
     }
@@ -187,10 +200,11 @@ header{
 }
 .tariffs_wrapper{
     width: 90%;
-    margin-top: 5rem;
+    padding-top: 2rem;
     .Comparison_of_tariffs{
         font-size: 5rem;
         text-align: center;
+        margin-top: 3rem;
     }
     .header-tariffs{
         width: 90%;
@@ -518,5 +532,210 @@ header{
         font-size: 1.6rem;
     }
 }
-  
+
+@media only screen and (max-width: 768px) {
+    header{
+        .nav{
+            .header-left{
+                h1{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+            .header-center{
+                display: none;
+            }
+        }
+    .nav_bottom{
+        .nav_bottom_item{
+            display: flex;
+            width: 80%;
+            font-size: 1.6rem;
+        }
+    }
+}
+    .calculator_wrapper{
+        .advertising{
+            font-size: 3rem;
+        }
+        .calculator{
+            width: 90%;
+            height: 40rem;
+            
+            h1{
+                font-size: 2rem;
+                line-height: 2rem;
+                margin: 1rem 0rem;
+            }
+            .calculator-item{
+                width: 100%;
+                height: 2rem;
+                flex-wrap: wrap;
+                font-size: 1.2rem; 
+            }
+            .plan_for_3_months{
+               
+                h3{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+                li{
+                    font-size: 1.4rem;
+                }
+                .months{
+                    display: flex;
+                    justify-content: space-between;
+                   margin: 0 1rem;
+                   
+                    padding: 0;
+                    .month1{
+                        padding-left: 2rem;
+                    }
+                }
+            }
+           
+        }
+    }       
+    
+}
+.tariffs_wrapper{
+    padding-top: 15rem;
+    .Comparison_of_tariffs{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    .header-tariffs{
+        height: 6rem;
+        font-size: 1.2rem;
+        li{
+            margin: 2rem 1rem;
+        }
+    }
+    .money{
+        flex-wrap: wrap;
+        width: 90%;
+            p{
+                width: 10rem;
+                height: 3rem;
+                flex-wrap: wrap;
+                font-size: 1.2rem;
+            }
+            h4{
+                font-size: 2rem;
+            }
+    }
+}
+.Application_form-wrapper{
+    height: auto;
+    margin-top: 3rem;
+    h4{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .form{
+       flex-wrap: wrap;
+        .name{
+            h5{
+                width: 12rem;
+                height: 4rem;
+                border: 1px solid #FFFFFF;
+                font-size: 1.4rem;
+                text-align: center;
+                margin: 1rem auto;
+            }
+        }
+    }
+    .application{
+        width: 10%;
+        p{
+            font-size: 1.4rem;
+            padding: 3rem 0;
+        }
+        h6{
+            font-size: 1rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #da0b0b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.heading-wrapper{
+    height: auto;
+    flex-wrap: wrap-reverse;
+    .heading{
+        .heading-img{
+            width: 10rem;
+            height: 10rem;
+            padding-left: 2.5rem;
+            img{
+                position: absolute;
+                left: 10px;
+                bottom: 0px;
+            }
+        }
+    }
+}
+.rates-wrapper{
+    h2{
+        padding: 1rem 0;
+        font-size: 3rem;
+    }
+    .rates{
+        flex-wrap: wrap-reverse;
+        .positions{
+            width: 23rem;
+            height: auto;  
+        }
+    }
+}
+.portfolio-wrapper{
+    h2{
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+    .portfolio{
+        display: block;
+        width: 90%;
+    }
+}
+.bottom-wrapper{
+    height: auto;
+    .bottom-item{
+        width: 80%;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        .bottom-left{
+            h1{
+                font-size: 1.8rem;
+            }
+                }
+            .bt-item{
+                color: #FFFFFF;
+                h5{
+                    font-size: 1.8rem;
+                    margin-bottom: 2rem;
+                }
+                li{
+                    font-size: 1.4rem;
+                }
+            }
+    }
+    .line-btn{
+        display: none;
+    }
+    .bottom-btn{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem auto;
+        color: #FFFFFF;
+        align-self: center;
+        font-size: 1.6rem;
+    }
+}
 
