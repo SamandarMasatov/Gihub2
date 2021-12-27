@@ -61,13 +61,17 @@ header .nav .header-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 3;
-      -ms-flex: 3 1 20rem;
-          flex: 3 1 20rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-size: 2rem;
+}
+
+header .nav .header-center a {
+  text-decoration: none;
 }
 
 header .nav .header-right {
@@ -113,11 +117,12 @@ header .nav_bottom .nav_bottom_item {
 
 .section_img {
   width: 100%;
-  height: 70vh;
 }
 
 .section_img img {
+  margin-top: 4rem;
   width: 100%;
+  background-size: cover;
 }
 
 .calculator_wrapper {
@@ -143,7 +148,6 @@ header .nav_bottom .nav_bottom_item {
 
 .calculator_wrapper .calculator {
   width: 80%;
-  height: 50rem;
   background-color: #FFFFFF;
   margin: 0 auto;
 }
@@ -157,7 +161,7 @@ header .nav_bottom .nav_bottom_item {
 
 .calculator_wrapper .calculator .calculator-item {
   width: 90%;
-  height: 5rem;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +181,7 @@ header .nav_bottom .nav_bottom_item {
 
 .calculator_wrapper .calculator .calculator-item .region li {
   width: 10rem;
-  height: 4rem;
+  height: auto;
   margin: 0.5rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,6 +199,7 @@ header .nav_bottom .nav_bottom_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 30rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -211,7 +216,7 @@ header .nav_bottom .nav_bottom_item {
 
 .calculator_wrapper .calculator .Price {
   width: 90%;
-  height: 3rem;
+  height: auto;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,11 +230,24 @@ header .nav_bottom .nav_bottom_item {
 
 .calculator_wrapper .calculator .img {
   margin: 0 auto;
+  position: relative;
+}
+
+.calculator_wrapper .calculator .img img {
+  width: 100%;
+}
+
+.calculator_wrapper .calculator .img .ellipse img {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 520px;
+  top: -6px;
 }
 
 .calculator_wrapper .calculator h2 {
   width: 15rem;
-  height: 5rem;
+  height: auto;
   border: 1px solid #e67676;
   color: #FF0404;
   font-size: 1.6rem;
@@ -258,9 +276,15 @@ header .nav_bottom .nav_bottom_item {
 .calculator_wrapper .calculator .plan_for_3_months li {
   list-style-type: disc;
   font-size: 2rem;
+  color: red;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months li a {
+  color: black;
 }
 
 .calculator_wrapper .calculator .plan_for_3_months .months {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,17 +294,45 @@ header .nav_bottom .nav_bottom_item {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 2rem 2rem;
-  padding: 0 2rem;
+  margin: 2rem auto;
+  margin-left: 0.1rem;
 }
 
 .calculator_wrapper .calculator .plan_for_3_months .months .month1 {
   padding-left: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+  margin-right: 2rem;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months .months .month1 li a {
+  opacity: 85%;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months .months .month2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+  margin-right: 2rem;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months .months .month2 li a {
+  opacity: 85%;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months .months .month3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+}
+
+.calculator_wrapper .calculator .plan_for_3_months .months .month3 li a {
+  opacity: 85%;
 }
 
 .tariffs_wrapper {
   width: 90%;
-  margin-top: 5rem;
 }
 
 .tariffs_wrapper .Comparison_of_tariffs {
@@ -290,7 +342,7 @@ header .nav_bottom .nav_bottom_item {
 
 .tariffs_wrapper .header-tariffs {
   width: 90%;
-  height: 6rem;
+  height: auto;
   font-size: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,22 +387,44 @@ header .nav_bottom .nav_bottom_item {
 
 .tariffs_wrapper .Scan-wrapper .audit-wrapper {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 .tariffs_wrapper .Scan-wrapper .audit-wrapper .audit {
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding-left: 8rem;
-  width: 80%;
+  width: 70%;
 }
 
 .tariffs_wrapper .Scan-wrapper .audit-wrapper .audit h3 {
-  font-size: 2.2rem;
-  line-height: 2.2rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 .tariffs_wrapper .Scan-wrapper .audit-wrapper .audit p {
   font-size: 1.6rem;
   opacity: 90%;
+}
+
+.tariffs_wrapper .Scan-wrapper .audit-wrapper .audit-responsive {
+  display: none;
+}
+
+.tariffs_wrapper .Scan-wrapper .audit-wrapper .audit-table {
+  width: 45%;
+}
+
+.tariffs_wrapper .Scan-wrapper .audit-wrapper .audit-table tr th img {
+  margin: 0 4rem;
 }
 
 .tariffs_wrapper .Scan-wrapper .keywords {
@@ -402,7 +476,7 @@ header .nav_bottom .nav_bottom_item {
 
 .tariffs_wrapper .money li p {
   width: 12rem;
-  height: 4rem;
+  height: auto;
   border: 1px solid #ec5454;
   color: #FF0404;
   display: -webkit-box;
@@ -424,12 +498,11 @@ header .nav_bottom .nav_bottom_item {
 
 .Application_form-wrapper {
   width: 100%;
-  height: 37.3rem;
   background-color: #333333;
   margin-top: 5rem;
 }
 
-.Application_form-wrapper h4 {
+.Application_form-wrapper .Application_form h4 {
   text-align: center;
   font-size: 5rem;
   line-height: 5rem;
@@ -437,15 +510,15 @@ header .nav_bottom .nav_bottom_item {
 }
 
 .Application_form-wrapper .form {
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .Application_form-wrapper .form .name {
-  width: 50%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,12 +528,12 @@ header .nav_bottom .nav_bottom_item {
 
 .Application_form-wrapper .form .name h5 {
   width: 20rem;
-  height: 5rem;
   border: 1px solid #FFFFFF;
   font-size: 1.6rem;
   margin: 2rem 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
 }
 
 .Application_form-wrapper .form .application {
@@ -475,7 +548,6 @@ header .nav_bottom .nav_bottom_item {
 .Application_form-wrapper .form .application h6 {
   font-size: 1.6rem;
   width: 31rem;
-  height: 4.9rem;
   background-color: #FF0404;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,7 +562,7 @@ header .nav_bottom .nav_bottom_item {
 
 .heading-wrapper {
   width: 100%;
-  height: 40rem;
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,7 +580,6 @@ header .nav_bottom .nav_bottom_item {
 
 .heading-wrapper .heading .heading-img {
   width: 13.9rem;
-  height: 13.9rem;
   border-radius: 50%;
   background-color: #F2F2F2;
   padding-left: 2.5rem;
@@ -632,6 +703,8 @@ header .nav_bottom .nav_bottom_item {
 
 .portfolio-wrapper .portfolio .Promotion {
   background-color: #F5F7F9;
+  text-align: center;
+  border: 1px solid;
   margin: 0 1rem 3rem 1rem;
 }
 
@@ -646,14 +719,14 @@ header .nav_bottom .nav_bottom_item {
   margin-top: 2rem;
 }
 
-.bottom-wrapper {
+.footer {
   width: 100%;
   height: 25rem;
   background-color: #333333;
   position: relative;
 }
 
-.bottom-wrapper .bottom-item {
+.footer .bottom-item {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,7 +736,7 @@ header .nav_bottom .nav_bottom_item {
   padding-bottom: 2rem;
 }
 
-.bottom-wrapper .bottom-item .bottom-left {
+.footer .bottom-item .bottom-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,19 +745,19 @@ header .nav_bottom .nav_bottom_item {
           flex: 1 1 20rem;
 }
 
-.bottom-wrapper .bottom-item .bottom-left h1 {
+.footer .bottom-item .bottom-left h1 {
   font-size: 2.5rem;
   color: red;
   margin-right: 1rem;
 }
 
-.bottom-wrapper .bottom-item .bottom-left p {
+.footer .bottom-item .bottom-left p {
   font-size: 1rem;
   color: #FFFFFF;
   padding-top: 0.5rem;
 }
 
-.bottom-wrapper .bottom-item .bottom-center {
+.footer .bottom-item .bottom-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,28 +769,28 @@ header .nav_bottom .nav_bottom_item {
           justify-content: space-evenly;
 }
 
-.bottom-wrapper .bottom-item .bt-item {
+.footer .bottom-item .bt-item {
   color: #FFFFFF;
 }
 
-.bottom-wrapper .bottom-item .bt-item h5 {
+.footer .bottom-item .bt-item h5 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
 }
 
-.bottom-wrapper .bottom-item .bt-item li {
+.footer .bottom-item .bt-item li {
   font-size: 1.6rem;
   list-style-type: disc;
   margin: 1rem 1rem;
 }
 
-.bottom-wrapper .line-btn {
+.footer .line-btn {
   position: absolute;
   left: 50px;
   bottom: 60px;
 }
 
-.bottom-wrapper .bottom-btn {
+.footer .bottom-btn {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,5 +803,442 @@ header .nav_bottom .nav_bottom_item {
   -ms-flex-item-align: center;
       align-self: center;
   font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header .nav .header-left h1 {
+    font-size: 2rem;
+  }
+  header .nav .header-left p {
+    font-size: 1rem;
+  }
+  header .nav .header-center {
+    display: none;
+  }
+  header .nav_bottom .nav_bottom_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  .calculator_wrapper .advertising {
+    font-size: 3rem;
+  }
+  .calculator_wrapper .calculator {
+    width: 90%;
+    height: 0rem;
+  }
+  .calculator_wrapper .calculator h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem 0rem;
+  }
+  .calculator_wrapper .calculator .calculator-item {
+    width: 100%;
+    height: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 1.2rem;
+  }
+  .calculator_wrapper .calculator .img .ellipse img {
+    left: 320px;
+    top: -5px;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months li {
+    font-size: 1.4rem;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months .months {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 1rem;
+    padding: 0;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months .months .month1 {
+    padding-left: 2rem;
+  }
+  .tariffs_wrapper {
+    padding-top: 15rem;
+  }
+  .tariffs_wrapper .Comparison_of_tariffs {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  .tariffs_wrapper .header-tariffs {
+    height: 6rem;
+    font-size: 1.2rem;
+  }
+  .tariffs_wrapper .header-tariffs li {
+    margin: 2rem 1rem;
+  }
+  .tariffs_wrapper .money {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+  }
+  .tariffs_wrapper .money p {
+    width: 10rem;
+    height: 3rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 1.2rem;
+  }
+  .tariffs_wrapper .money h4 {
+    font-size: 2rem;
+  }
+  .Application_form-wrapper {
+    height: auto;
+    margin-top: 1rem;
+  }
+  .Application_form-wrapper .Application_form h4 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .Application_form-wrapper .form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .Application_form-wrapper .form .name h5 {
+    width: 12rem;
+    height: 4rem;
+    border: 1px solid #FFFFFF;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .Application_form-wrapper .application {
+    width: 10%;
+  }
+  .Application_form-wrapper .application p {
+    font-size: 1.4rem;
+    padding: 3rem 0;
+  }
+  .Application_form-wrapper .application h6 {
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #da0b0b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .heading-wrapper {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .heading-wrapper .heading .heading-img {
+    width: 10rem;
+    height: 10rem;
+    padding-left: 2.5rem;
+  }
+  .heading-wrapper .heading .heading-img img {
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+  }
+  .rates-wrapper h2 {
+    padding: 1rem 0;
+    font-size: 3rem;
+  }
+  .rates-wrapper .rates {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .rates-wrapper .rates .positions {
+    width: 23rem;
+    height: auto;
+  }
+  .portfolio-wrapper h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+  .portfolio-wrapper .portfolio {
+    display: block;
+    width: 90%;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer .bottom-item {
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .footer .bottom-item .bottom-left h1 {
+    font-size: 1.8rem;
+  }
+  .footer .bottom-item .bt-item {
+    color: #FFFFFF;
+  }
+  .footer .bottom-item .bt-item h5 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .footer .bottom-item .bt-item li {
+    font-size: 1.4rem;
+  }
+  .footer .line-btn {
+    display: none;
+  }
+  .footer .bottom-btn {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem auto;
+    color: #FFFFFF;
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    height: 1rem;
+  }
+  header .nav .header-right {
+    display: none;
+  }
+  header .nav_bottom {
+    display: none;
+  }
+  .calculator_wrapper {
+    width: 100%;
+    background-color: #F5F7F9;
+  }
+  .calculator_wrapper .advertising {
+    width: 90%;
+    height: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    position: relative;
+  }
+  .calculator_wrapper .advertising .icon-fire img {
+    position: absolute;
+    left: 170px;
+    height: 300px;
+    width: 5rem;
+    height: 5rem;
+  }
+  .calculator_wrapper .calculator {
+    width: 80%;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+  }
+  .calculator_wrapper .calculator h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 1rem auto;
+  }
+  .calculator_wrapper .calculator .calculator-item {
+    width: 90%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.7rem;
+  }
+  .calculator_wrapper .calculator .calculator-item .region {
+    width: 80%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calculator_wrapper .calculator .calculator-item .region li {
+    width: 29rem;
+    height: 4rem;
+    margin: 0.5rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #EAECEF;
+  }
+  .calculator_wrapper .calculator .calculator-item .promoted {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem 2rem;
+    font-size: 16px;
+  }
+  .calculator_wrapper .calculator .calculator-item .promoted li:nth-child(2) {
+    width: 24.7rem;
+    margin-left: 1rem;
+  }
+  .calculator_wrapper .calculator .Price {
+    width: 90%;
+    height: 3rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .calculator_wrapper .calculator .img .ellipse img {
+    left: 155px;
+    top: -1px;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .calculator_wrapper .calculator h2 {
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid #e67676;
+    color: #FF0404;
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months {
+    width: 100%;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months h3 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months li {
+    list-style-type: disc;
+    font-size: 2rem;
+    color: red;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months li a {
+    color: black;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months .months {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 2rem auto;
+    margin-left: 0.1rem;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months .months .month1 {
+    padding-left: 2rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25rem;
+            flex: 1 1 25rem;
+    margin-right: 2rem;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months .months .month2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25rem;
+            flex: 1 1 25rem;
+    margin-right: 2rem;
+  }
+  .calculator_wrapper .calculator .plan_for_3_months .months .month3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25rem;
+            flex: 1 1 25rem;
+  }
+  .tariffs_wrapper {
+    margin-top: 80rem;
+  }
+  .tariffs_wrapper .Comparison_of_tariffs {
+    padding-top: 4rem;
+  }
+  .tariffs_wrapper .Comparison_of_tariffs p {
+    margin-top: 0;
+  }
+  .header-tariffs {
+    height: auto;
+  }
+  .header-tariffs li {
+    display: none;
+  }
+  .Scan-wrapper {
+    margin-top: 0rem;
+  }
+  .Scan-wrapper .audit-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    border: 1px solid;
+  }
+  .Scan-wrapper .audit-responsive li {
+    width: 90%;
+  }
+  .Scan-wrapper .audit-table {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
