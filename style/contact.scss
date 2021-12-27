@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 5rem;
+    .nav{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .alkk{
+            display: flex;
+            flex: 1 1 5rem;
+            .ALKKRU{
+                width: 12rem;
+                height: 2.3rem;
+                background: url("../img/ALKK.ru\ \(2\).png") no-repeat center;
+                background-size: cover;
+            }
+            .net{
+                margin-left: 1rem;
+                font-size: 1rem;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+        .nav_link{
+            flex: 3 1 15rem;
+            ul{
+                display: flex;
+                justify-content: center;
+                font-size: 1.4rem;
+                li{
+                    margin: 0 2rem;
+                    a{
+                        color: #333333;
+                    }
+                }
+            }
+        }
+       .number{
+            display: flex;
+            justify-content: flex-end;
+            flex: 1 1 15rem;
+            margin-right: 2rem;
+            .tel_icon{
+                width: 1.9rem;
+                height: 1.9rem;
+                background: url("../img/Vector.png") no-repeat center;
+                background-size: cover;
+            }
+            .tel_icon2{
+                width: 1.9rem;
+                height: 2rem;
+                margin-left: 1.2rem;
+                background: url("../img/Vector\ \(1\).png") no-repeat center;
+                background-size: cover;
+            }
+            p{
+                font-size: 1.8rem;
+                margin-left: 1.2rem;
+                a{
+                    color: #333333;
+                    border-bottom: 2px solid blue;
+                }
+            }
+    }
+ }
+
+}
+.header_link{
+    width: 100%;
+    height: 3.8rem;
+    background-color: #333333;
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #fff;
+                margin: 3rem;
+            }
+        }
+    }
+}
+.contact{
+    width: 100%;
+    background-color:#F5F7F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+    h2{
+        font-size: 5.5rem;
+        margin-bottom: 5rem;
+    }
+    .container{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .ofis{
+            flex: 1 1 20rem;
+            background-color: #fff;
+            display: flex;
+            border-radius: 1rem;
+            padding: 2rem 0;
+            margin: 2rem;
+            .ofis_img{
+                width: 3rem;
+                height: 3rem;
+                background: url("../img/location-tick.png") no-repeat center;
+                background-size: cover;
+                margin-right: 1rem;
+            }
+            .ofis_text{
+                h4{
+                    font-size: 2.2rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .telefon{
+            flex: 1 1 20rem;
+            display: flex;
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 2rem 0;
+            margin: 2rem;
+            .telefon_img{
+                width: 2.8rem;
+                height: 2.8rem;
+                background: url("../img/call.png") no-repeat center;
+                background-size: cover;
+                margin-right: 1rem;
+            }
+            .telefon_text{
+                h4{
+                    font-size: 2.2rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+.container2{
+    width: 100%;
+    background-color: #333333;
+.card_link{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    border-bottom: 2px solid #666666;
+    .alkk{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 1 1 10rem;
+        margin-top: -10rem;
+        p{
+            margin-left: 1rem;
+            color: #fff;
+        }
+        .ALKKRU{
+            width: 12rem;
+            height: 2.3rem;
+            background: url("../img/ALKK.ru\ \(2\).png") no-repeat center;
+            background-size: cover;
+        }
+    }
+    .sayt_link{
+        display: flex;
+        justify-content: space-between;
+        flex: 4 1 10rem;
+        padding: 2rem 0 8rem;
+        color: #ffffff;
+        .sozdanie{  
+            margin-left: 2rem;
+            h2{
+                font-size: 2.2rem;  
+            }
+            span{
+                width: 4rem;
+                height: 0.2rem;
+                display: flex;
+                background-color: #FF0404;
+                margin-top: 2rem;
+            }
+            .pozisiyom{
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                font-size: 1.6rem;
+                .pozisiyom_img{
+                    width: 6px;
+                    height: 7px;
+                    background: url("../img/Vector.png") no-repeat center;
+                    background-size: cover;
+                }
+                p{
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+       .karta{
+           width: 90%;
+           margin: 0 auto;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 5rem 0;
+           font-size: 1.6rem;
+           color: #fff;
+    }
+}
+
+
+
+// Responsive
+
+
+
+
+@media only screen and (max-width: 768px){
+    .nav_link{
+        display: none;
+    }
+    .header{
+        .nav{
+            .span{
+                width: 4rem;
+                height: 3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                span{
+                    width: 3rem;
+                    height: 0.3rem;
+                    background-color: #333333;
+                    margin: 0.2rem 0;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 620px){
+    .container2{
+       .card_link{
+           display: block;
+           .alkk{
+               margin-top: 2rem;
+               justify-content: center;
+           }
+           .sayt_link{
+               justify-content: space-evenly;
+               flex-direction: column;
+               padding: 2rem 0 0 0;
+               .sozdanie{
+                   margin-left: 0;
+                   margin-top: 0.5rem;
+               }
+           }
+       }
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .header{
+        .nav{
+            .number{
+                display: none;
+            }
+        }
+    }
+    .header_link{
+        display: none;
+    }
+    .contact{
+        h2{
+            font-size: 4.5rem;
+        }
+    }
+}

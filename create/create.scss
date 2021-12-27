@@ -121,7 +121,7 @@ li{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 8rem;
+    padding: 8rem 0;
     span{
         border: 1px solid #EAECEF;
         margin-top: 2rem;
@@ -155,6 +155,7 @@ li{
         width: 100%;
         display: flex;
         padding: 5rem 0;
+        flex-wrap: wrap;
         .name{
             flex: 1 1 10rem;
             display: flex;
@@ -896,15 +897,7 @@ li{
             }
         }
     }
-    .nav_item{
-        display: block;
-        span{
-            width: 100%;
-            height: 0.4rem;
-            background-color: red;
-            display: block;
-        }
-    }
+    
     .sozdanie_card{
         h2{
             font-size: 3.5rem;
@@ -913,21 +906,20 @@ li{
     .forma {
         form {
             .button {
-
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 3rem;
                 .checkbox{
+                    margin-bottom: 1rem;
                     p{
                         font-size: 1rem;
                     }
                 }
-                button{
-                    padding: 0.4rem 2.3rem;
-                   a{
-                    font-size: 1.4rem;
-                   }
-                }
+                
             }
             .name{
-                margin-right: 1rem;
+                margin-right: 7rem;
             }
         }
     }
