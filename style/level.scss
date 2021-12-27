@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 10px;
+    font-size: 10px; 
 }
 a{
     text-decoration: none;
@@ -21,11 +21,10 @@ main{
 }
 // header----------------------------------------------------
 header{
+    width: 100%;
+    height: 5rem;
+    background-color: #E5E5E5; 
     .nav_top{
-        width: 100%;
-        height: 5rem;
-        background-color: #E5E5E5; 
-        .menu_top{
             height: 100%;
             width: 90%;
             margin: 0 auto;
@@ -33,62 +32,72 @@ header{
             align-items: center;
             justify-content: space-between;
             .logo{
-                flex: 1 1 1rem;
+                flex: 1 1 10rem;
             }
-            .burger{
-                width: 4rem;
-                span{
-                    display: none;
-                    width: 100%;
-                    height: 0.5rem;
-                    margin: 0.5rem 0;
-                    background-color: #000;
-                    border-radius: 5px;
-                }
-            }
-            .nav_link{
-                flex: 3 1 35rem;
+            .nav_link_phone{
+                flex: 4 1 50rem;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                .nav_item{
+                .nav_link_bottom_mobile{
+                    display: none;
+                }
+                .nav_link{
+                    flex: 3 1 35rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .nav_item{
+                        a{
+                            margin: 0 1rem;
+                            font-family: 'Fira Sans Extra Condensed',sans-serif;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 1.4rem;
+                            line-height: 17px;
+                            display: flex;
+                            align-items: flex-end;
+                            text-align: center;
+                            letter-spacing: 0.04em;
+                            color: #333333;
+                        }
+                    }
+                }
+                .phone{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    white-space: nowrap;
                     a{
+                        margin: 0 0.2rem;
+                    }
+                    .number{
                         margin: 0 1rem;
-                        font-family: 'Fira Sans Extra Condensed',sans-serif;
+                        font-family: 'Gilroy',sans-serif;
                         font-style: normal;
-                        font-weight: 500;
-                        font-size: 1.4rem;
-                        line-height: 17px;
+                        font-weight: bold;
+                        font-size: 1.8rem;
+                        line-height: 22px;
                         display: flex;
                         align-items: flex-end;
                         text-align: center;
-                        letter-spacing: 0.04em;
                         color: #333333;
                     }
                 }
             }
-            .phone{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                white-space: nowrap;
-                a{
-                    margin: 0 0.2rem;
-                }
-                .number{
-                    margin: 0 1rem;
-                    font-family: 'Gilroy',sans-serif;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 1.8rem;
-                    line-height: 22px;
-                    display: flex;
-                    align-items: flex-end;
-                    text-align: center;
-                    color: #333333;
+            
+
+
+            .burger{
+                width: 4rem;
+                span{
+                    display: none;
+                    width: 80%;
+                    height: 0.5rem;
+                    margin: 0.4rem 0;
+                    background-color: #000;
+                    border-radius: 5px;
                 }
             }
-        }
+        
     }
     .nav_bottom{
         width: 100%;
@@ -557,7 +566,7 @@ header{
             // margin: 1rem 0;
             width: 25rem;
             h2{
-                margin: 6rem 0 3rem 0;
+                // margin: 6rem 0 3rem 0;
                 display: flex;
                 align-items: center;
                 // height: 5rem;
@@ -604,7 +613,5 @@ header{
         }
     }
 }
-.active{
-    left: 0;
-}
+
 @import "responsive";

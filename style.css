@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -227,21 +228,9 @@ header .nav_bottom .nav_bottom_item {
           justify-content: space-between;
 }
 
-.calculator_wrapper .calculator .img {
+.calculator_wrapper .calculator .range_wrapper {
+  width: 90%;
   margin: 0 auto;
-  position: relative;
-}
-
-.calculator_wrapper .calculator .img img {
-  width: 100%;
-}
-
-.calculator_wrapper .calculator .img .ellipse img {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  left: 520px;
-  top: -6px;
 }
 
 .calculator_wrapper .calculator h2 {
@@ -844,10 +833,6 @@ header .nav_bottom .nav_bottom_item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-size: 1.2rem;
-  }
-  .calculator_wrapper .calculator .img .ellipse img {
-    left: 320px;
-    top: -5px;
   }
   .calculator_wrapper .calculator .plan_for_3_months h3 {
     font-size: 2rem;

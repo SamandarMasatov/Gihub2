@@ -23,13 +23,13 @@ main {
   margin: 0 auto;
 }
 
-header .nav_top {
+header {
   width: 100%;
   height: 5rem;
   background-color: #E5E5E5;
 }
 
-header .nav_top .menu_top {
+header .nav_top {
   height: 100%;
   width: 90%;
   margin: 0 auto;
@@ -44,26 +44,26 @@ header .nav_top .menu_top {
           justify-content: space-between;
 }
 
-header .nav_top .menu_top .logo {
+header .nav_top .logo {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 1rem;
-          flex: 1 1 1rem;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
 }
 
-header .nav_top .menu_top .burger {
-  width: 4rem;
+header .nav_top .nav_link_phone {
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 50rem;
+          flex: 4 1 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header .nav_top .menu_top .burger span {
+header .nav_top .nav_link_phone .nav_link_bottom_mobile {
   display: none;
-  width: 100%;
-  height: 0.5rem;
-  margin: 0.5rem 0;
-  background-color: #000;
-  border-radius: 5px;
 }
 
-header .nav_top .menu_top .nav_link {
+header .nav_top .nav_link_phone .nav_link {
   -webkit-box-flex: 3;
       -ms-flex: 3 1 35rem;
           flex: 3 1 35rem;
@@ -78,7 +78,7 @@ header .nav_top .menu_top .nav_link {
           justify-content: center;
 }
 
-header .nav_top .menu_top .nav_link .nav_item a {
+header .nav_top .nav_link_phone .nav_link .nav_item a {
   margin: 0 1rem;
   font-family: 'Fira Sans Extra Condensed',sans-serif;
   font-style: normal;
@@ -96,7 +96,7 @@ header .nav_top .menu_top .nav_link .nav_item a {
   color: #333333;
 }
 
-header .nav_top .menu_top .phone {
+header .nav_top .nav_link_phone .phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,11 +109,11 @@ header .nav_top .menu_top .phone {
   white-space: nowrap;
 }
 
-header .nav_top .menu_top .phone a {
+header .nav_top .nav_link_phone .phone a {
   margin: 0 0.2rem;
 }
 
-header .nav_top .menu_top .phone .number {
+header .nav_top .nav_link_phone .phone .number {
   margin: 0 1rem;
   font-family: 'Gilroy',sans-serif;
   font-style: normal;
@@ -128,6 +128,19 @@ header .nav_top .menu_top .phone .number {
           align-items: flex-end;
   text-align: center;
   color: #333333;
+}
+
+header .nav_top .burger {
+  width: 4rem;
+}
+
+header .nav_top .burger span {
+  display: none;
+  width: 80%;
+  height: 0.5rem;
+  margin: 0.4rem 0;
+  background-color: #000;
+  border-radius: 5px;
 }
 
 header .nav_bottom {
@@ -790,7 +803,6 @@ header .nav_bottom .menu_bottom .nav_link_bottom .nav_item_bottom a {
 }
 
 .footer .footer_wrapper .footer_in h2 {
-  margin: 6rem 0 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,19 +859,27 @@ header .nav_bottom .menu_bottom .nav_link_bottom .nav_item_bottom a {
   color: #FFFFFF;
 }
 
-.active {
-  left: 0;
-}
-
 @media only screen and (max-width: 850px) {
-  header .nav_top .menu_top .burger span {
+  header .nav_top .nav_link_phone {
+    width: 80%;
+    height: 100%;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+  }
+  header .nav_top .nav_link_phone .nav_link_bottom_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .nav_top .burger span {
     display: block;
-  }
-  header .nav_top .menu_top .nav_link {
-    display: none;
-  }
-  header .nav_top .menu_top .phone {
-    display: none;
   }
 }
 
@@ -879,6 +899,6 @@ header .nav_bottom .menu_bottom .nav_link_bottom .nav_item_bottom a {
 }
 
 .active {
-  left: 0;
+  left: 0 !important;
 }
 /*# sourceMappingURL=level.css.map */

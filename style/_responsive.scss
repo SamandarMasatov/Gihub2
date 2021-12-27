@@ -1,25 +1,22 @@
 @media only screen and (max-width: 850px){
     header{
         .nav_top{
-            .menu_top{
-                .burger{
-                    span{
-                        display: block;
+            .nav_link_phone{
+                    width: 80%;
+                    height: 100%;
+                    background-color: aqua;
+                    position: fixed;
+                    top: 0;
+                    left: -100%;
+                    z-index: 5;
+                    .nav_link_bottom_mobile{
+                        display: flex;
+                        flex-direction: column;
                     }
-                }
-                .nav_link{
-                    // z-index: 5;
-                    // position: fixed;
-                    // top: 0;
-                    // left: -100%;
-                    display: none;
-                }
-                .phone{
-                    // z-index: 5;
-                    // position: fixed;
-                    // top: 0;
-                    // left: -100%;
-                    display: none;
+            }
+            .burger{
+                span{
+                    display: block;
                 }
             }
         }
@@ -48,5 +45,5 @@
 }
 
 .active{
-    left: 0;
+    left: 0 !important;
 }
