@@ -1,8 +1,7 @@
 @media only screen and (max-width: 850px){
     header{
         .nav_top{
-            .menu_top{
-                .nav_link{
+            .nav_link_phone{
                     width: 80%;
                     height: 100%;
                     background-color: aqua;
@@ -10,11 +9,14 @@
                     top: 0;
                     left: -100%;
                     z-index: 5;
-                }
-                .burger{
-                    span{
-                        display: block;
+                    .nav_link_bottom_mobile{
+                        display: flex;
+                        flex-direction: column;
                     }
+            }
+            .burger{
+                span{
+                    display: block;
                 }
             }
         }
