@@ -56,9 +56,9 @@ header .nav_top .menu_top .burger {
 
 header .nav_top .menu_top .burger span {
   display: none;
-  width: 100%;
+  width: 80%;
   height: 0.5rem;
-  margin: 0.5rem 0;
+  margin: 0.4rem 0;
   background-color: #000;
   border-radius: 5px;
 }
@@ -790,7 +790,6 @@ header .nav_bottom .menu_bottom .nav_link_bottom .nav_item_bottom a {
 }
 
 .footer .footer_wrapper .footer_in h2 {
-  margin: 6rem 0 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
