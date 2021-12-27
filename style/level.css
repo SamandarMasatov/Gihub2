@@ -847,19 +847,18 @@ header .nav_bottom .menu_bottom .nav_link_bottom .nav_item_bottom a {
   color: #FFFFFF;
 }
 
-.active {
-  left: 0;
-}
-
 @media only screen and (max-width: 850px) {
+  header .nav_top .menu_top .nav_link {
+    width: 80%;
+    height: 100%;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+  }
   header .nav_top .menu_top .burger span {
     display: block;
-  }
-  header .nav_top .menu_top .nav_link {
-    display: none;
-  }
-  header .nav_top .menu_top .phone {
-    display: none;
   }
 }
 
@@ -879,6 +878,6 @@ header .nav_bottom .menu_bottom .nav_link_bottom .nav_item_bottom a {
 }
 
 .active {
-  left: 0;
+  left: 0 !important;
 }
 /*# sourceMappingURL=level.css.map */

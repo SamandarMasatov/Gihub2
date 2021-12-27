@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 html{
     font-size: 10px;
@@ -146,21 +146,9 @@ header{
             justify-content: space-between;
             
         }
-        .img{
+        .range_wrapper{
+            width: 90%;
             margin: 0 auto;
-            position: relative;
-        img{
-            width: 100%;
-        }
-        .ellipse{
-            img{
-                position: absolute;
-                width: 2rem;
-                height: 2rem;
-                left: 520px;
-                top: -6px;
-            }
-        }   
         }
         h2{
             width: 15rem;
@@ -608,8 +596,6 @@ header{
         }
         .calculator{
             width: 90%;
-            height: 0rem;
-            
             h1{
                 font-size: 2rem;
                 line-height: 2rem;
@@ -620,14 +606,6 @@ header{
                 height: 2rem;
                 flex-wrap: wrap;
                 font-size: 1.2rem; 
-            }
-            .img{
-            .ellipse{
-                img{
-                    left: 320px;
-                    top: -5px;
-                }
-            }   
             }
             .plan_for_3_months{
                
