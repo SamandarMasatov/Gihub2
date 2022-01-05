@@ -67,30 +67,60 @@ li {
 }
 
 .header .nav .nav_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-flex: 3;
       -ms-flex: 3 1 15rem;
           flex: 3 1 15rem;
 }
 
-.header .nav .nav_link ul {
+.header .nav .nav_link .alkkru_img {
+  width: 18.1rem;
+  height: 2.62rem;
+  background: url("../img/Group 481330.png") no-repeat center;
+  background-size: cover;
+  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 2.8rem;
+          flex: 1 1 2.8rem;
+}
+
+.header .nav .nav_link .nav_link_bottom_mobile {
+  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  font-size: 2rem;
+}
+
+.header .nav .nav_link .nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.4rem;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 10rem;
+          flex: 3 1 10rem;
 }
 
-.header .nav .nav_link ul li {
+.header .nav .nav_link .nav-link li {
   margin: 0 2rem;
 }
 
-.header .nav .nav_link ul li a {
+.header .nav .nav_link .nav-link li a {
   color: #333333;
 }
 
-.header .nav .number {
+.header .nav .nav_link .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,17 +130,22 @@ li {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 15rem;
           flex: 1 1 15rem;
-  margin-right: 2rem;
 }
 
-.header .nav .number .tel_icon {
+.header .nav .nav_link .number .tel-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav .nav_link .number .tel-icon .tel_icon {
   width: 1.9rem;
   height: 1.9rem;
-  background: url("../img/Vector.png") no-repeat center;
+  background: url("../img/watsab.png") no-repeat center;
   background-size: cover;
 }
 
-.header .nav .number .tel_icon2 {
+.header .nav .nav_link .number .tel-icon .tel_icon2 {
   width: 1.9rem;
   height: 2rem;
   margin-left: 1.2rem;
@@ -118,12 +153,12 @@ li {
   background-size: cover;
 }
 
-.header .nav .number p {
+.header .nav .nav_link .number p {
   font-size: 1.8rem;
   margin-left: 1.2rem;
 }
 
-.header .nav .number p a {
+.header .nav .nav_link .number p a {
   color: #333333;
   border-bottom: 2px solid blue;
 }
@@ -1092,10 +1127,75 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
-  .nav_link {
+  .header .nav .nav_link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #333333;
+    width: 80%;
+    height: 100%;
+    color: #fff;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .header .nav .nav_link .alkkru_img {
+    display: block;
+    margin: 1rem 2rem 0;
+  }
+  .header .nav .nav_link .nav_link_bottom_mobile {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .header .nav .nav_link .nav_link_bottom_mobile .nav_item_bottom {
+    margin: 2rem 0;
+  }
+  .header .nav .nav_link .nav_link_bottom_mobile .nav_item_bottom a {
+    color: #fff;
+  }
+  .header .nav .nav_link .nav-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .nav .nav_link .nav-link li {
+    margin: 2rem 0;
+  }
+  .header .nav .nav_link .nav-link li a {
+    color: #fff;
+  }
+  .header .nav .nav_link .nav-link p {
     display: none;
   }
-  .header .nav .span {
+  .header .nav .nav_link .number {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+  .header .nav .nav_link .number div {
+    display: inline-block;
+    margin: 0.5rem auto;
+  }
+  .header .nav .nav_link .number p a {
+    color: #fff;
+  }
+  .header .nav .burger {
     width: 4rem;
     height: 3.5rem;
     display: -webkit-box;
@@ -1112,12 +1212,14 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header .nav .span span {
+  .header .nav .burger span {
     width: 3rem;
     height: 0.3rem;
     background-color: #333333;
     margin: 0.2rem 0;
-    border: 1px solid;
+  }
+  .header_link {
+    display: none;
   }
 }
 
@@ -1148,9 +1250,6 @@ li {
 }
 
 @media only screen and (max-width: 550px) {
-  .header .nav .number {
-    display: none;
-  }
   .sozdanie_card h2 {
     font-size: 4.5rem;
   }
@@ -1295,5 +1394,9 @@ li {
   .forma form .name {
     margin-right: 7rem;
   }
+}
+
+.active {
+  left: 0;
 }
 /*# sourceMappingURL=create.css.map */

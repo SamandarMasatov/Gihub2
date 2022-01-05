@@ -40,11 +40,28 @@ li{
             }
         }
         .nav_link{
+            display: flex;
+            justify-content: space-around;
             flex: 3 1 15rem;
-            ul{
+            .alkkru_img{
+                width: 18.1rem;
+                height: 2.62rem;
+                background: url("../img/Group\ 481330.png") no-repeat center;
+                background-size: cover;
+                display: none;
+                flex: 1 1 2.8rem;
+            }
+            .nav_link_bottom_mobile{
+                display: none;
+                flex: 1 1 10rem;
+                font-size: 2rem;
+            }
+            .nav-link{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 font-size: 1.4rem;
+                flex: 3 1 10rem;
                 li{
                     margin: 0 2rem;
                     a{
@@ -52,34 +69,37 @@ li{
                     }
                 }
             }
-        }
-       .number{
-            display: flex;
-            justify-content: flex-end;
-            flex: 1 1 15rem;
-            margin-right: 2rem;
-            .tel_icon{
-                width: 1.9rem;
-                height: 1.9rem;
-                background: url("../img/Vector.png") no-repeat center;
-                background-size: cover;
-            }
-            .tel_icon2{
-                width: 1.9rem;
-                height: 2rem;
-                margin-left: 1.2rem;
-                background: url("../img/Vector\ \(1\).png") no-repeat center;
-                background-size: cover;
-            }
-            p{
-                font-size: 1.8rem;
-                margin-left: 1.2rem;
-                a{
-                    color: #333333;
-                    border-bottom: 2px solid blue;
+            .number{
+                display: flex;
+                justify-content: flex-end;
+                flex: 1 1 15rem;
+                .tel-icon{
+                    display: flex;
+                    .tel_icon{
+                        width: 1.9rem;
+                        height: 1.9rem;
+                        background: url("../img/watsab.png") no-repeat center;
+                        background-size: cover;
+                    }
+                    .tel_icon2{
+                        width: 1.9rem;
+                        height: 2rem;
+                        margin-left: 1.2rem;
+                        background: url("../img/Vector\ \(1\).png") no-repeat center;
+                        background-size: cover;
+                    }
                 }
-            }
-    }
+                p{
+                    font-size: 1.8rem;
+                    margin-left: 1.2rem;
+                    a{
+                        color: #333333;
+                        border-bottom: 2px solid blue;
+                    }
+                }
+        }
+        }
+       
  }
 
 }
@@ -706,29 +726,94 @@ li{
 // Responsive
 
 @media only screen and (max-width: 768px){
-    .nav_link{
-        display: none;
-    }
+    
     .header{
+        
         .nav{
-            .span{
+            .nav_link{
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                left: -100%;
+                background-color:  #333333;
+                width: 80%;
+                height: 100%;
+                color: #fff;
+                transition: all 1s ease;
+                .alkkru_img{
+                display: block;
+                margin: 1rem 2rem 0;
+                }
+                .nav_link_bottom_mobile{
+                    width: 90%;
+                    margin: 0 auto;
+                    display: block;
+                    justify-content: space-between;
+                    text-align: center;
+                    .nav_item_bottom{
+                        margin: 2rem 0;
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+                .nav-link{
+                    flex-direction: column;
+                    align-items: center;
+                    li{
+                        margin: 2rem 0;
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+                .number{
+                    flex-direction: column;
+                    text-align: center;
+                    margin-right: 0;
+                    margin: 0 auto;
+                    div{
+                       display: inline-block;
+                       margin: 0.5rem auto;
+                    
+                    }
+                    p{
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+
+            }
+            .burger{
                 width: 4rem;
                 height: 3.5rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                // position: fixed;
                 span{
                     width: 3rem;
                     height: 0.3rem;
                     background-color: #333333;
                     margin: 0.2rem 0;
-                    border: 1px solid;
                 }
             }
-        }
+
+                 
+         }
+    }
+    .header_link{
+        display: none;
     }
 }
+
+
+
 @media only screen and (max-width: 620px){
      .container{
         .card_link{
@@ -750,13 +835,6 @@ li{
      }
 }
 @media only screen and (max-width: 550px){
-            .header{
-               .nav{
-                .number{
-                    display: none;
-                }
-               }
-            }
             .sozdanie_card{
                 h2{
                     font-size: 4.5rem;
@@ -793,8 +871,7 @@ li{
             .sravnenie_link {
                 justify-content: center;
                 a{
-                    margin: 2rem 1rem;  
-                    
+                    margin: 2rem 1rem;    
               }
         }
         .analiz{
@@ -924,3 +1001,8 @@ li{
         }
     }
 }
+
+.active{
+    left: 0;
+}
+
